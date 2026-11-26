@@ -6,7 +6,6 @@ import features   # o modelo salvo chama features.engenharia: o arquivo precisa 
 
 st.set_page_config(page_title="Risco de churn — Telco", page_icon="📉")
 st.title("Este cliente vai cancelar?")
-st.caption("App publicado por: Simão Oliveira")
 st.write("Preencha os dados de um cliente da operadora. O modelo foi treinado com 5.634 clientes do "
          "dataset Telco Customer Churn (IBM, Califórnia, EUA) e devolve uma pontuação de risco de cancelamento.")
 
