@@ -4,7 +4,7 @@ App em Streamlit que estima o risco de cancelamento (churn) de um cliente de ope
 Você preenche o perfil, o contrato e os serviços do cliente, e o modelo devolve uma pontuação de risco e uma
 classificação (risco alto ou baixo).
 
-App publicado em: https://SEU-APP.streamlit.app
+App publicado em: https://churn-telco-inf1032.streamlit.app/
 
 Projeto em grupo de INF1032 (Introdução à Ciência de Dados, PUC-Rio), Turma 3WB, Grupo 02.
 
