@@ -1,10 +1,10 @@
 # Este cliente vai cancelar?
 
 App em Streamlit que estima o risco churn de um cliente de operadora de telecomunicações.
-Você preenche o perfil, o contrato e os serviços do cliente, e o modelo devolve uma pontuação de risco e uma
+Necessário preencher o perfil, o contrato e os serviços do cliente, e o modelo devolve uma pontuação de risco e uma
 classificação (risco alto ou baixo).
 
-App publicado em: https://churn-telco-inf1032.streamlit.app/
+link: https://churn-telco-inf1032.streamlit.app/
 
 Projeto em grupo de INF1032 (Introdução à Ciência de Dados, PUC-Rio), Turma 3WB, Grupo 02.
 
@@ -13,7 +13,7 @@ Projeto em grupo de INF1032 (Introdução à Ciência de Dados, PUC-Rio), Turma 
 | arquivo | o que faz |
 |---|---|
 | `app.py` | a tela: carrega o modelo, mostra o formulário e calcula a pontuação |
-| `features.py` | as funções de engenharia de features, as mesmas do notebook; o modelo salvo chama `features.engenharia` |
+| `features.py` | as funções de engenharia de features; o modelo salvo chama `features.engenharia` |
 | `modelo_churn.pkl` | o pipeline treinado (features, pré-processamento e o XGBoost tunado) |
 | `requirements.txt` | as bibliotecas que o Streamlit instala antes de rodar o app, com as versões que geraram o `.pkl` |
 | `README.md` | esta página |
@@ -36,7 +36,7 @@ recall de 0,791 (296 dos 374 cancelamentos) e precisão de 0,525. Na validação
 - **A pontuação não é a probabilidade real de cancelar.** Como o modelo foi treinado com peso extra nos
   clientes que cancelam, a pontuação fica inflada. Ela serve para ordenar e para o corte em 0,5, não para
   dizer "este cliente tem X% de chance de sair".
-- **É uma estimativa, não uma decisão.** Serve para apoiar a equipe de retenção; nenhuma decisão sobre um
+- **É uma estimativa.** Serve para apoiar a equipe de retenção; nenhuma decisão sobre um
   cliente deve ser tomada só por ela (LGPD, art. 20: quem é afetado por uma decisão automatizada pode pedir
   a revisão dela).
 - **O app não guarda o que é digitado.** O repositório não tem o dataset de treino, só o modelo.
