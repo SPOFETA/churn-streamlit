@@ -1,6 +1,6 @@
 # Este cliente vai cancelar?
 
-App em Streamlit que estima o risco de cancelamento (churn) de um cliente de operadora de telecomunicações.
+App em Streamlit que estima o risco churn de um cliente de operadora de telecomunicações.
 Você preenche o perfil, o contrato e os serviços do cliente, e o modelo devolve uma pontuação de risco e uma
 classificação (risco alto ou baixo).
 
